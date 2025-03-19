@@ -1,22 +1,39 @@
 .meals-container {
-  padding: 30px;
+  padding: 20px;
   max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Align items to the left */
 }
 
+.filters {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filters label {
+  font-size: 1.2rem;
+  color: white; /* Set the font color to white */
+}
+
 .product-cards-container {
-  max-width: 100%;
-  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 16px; /* Add gap between product cards */
+  gap: 20px;
+  justify-content: center;
 }
 
 h5 {
-  color: #ff7e5f;
-  font-size: 40px;
+  color: white; /* Set the font color to white */
+  font-size: 2rem; /* Increase the font size of the headers */
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1.2rem; /* Increase the font size of the paragraphs */
+  margin-bottom: 20px;
+  color: white; /* Set the font color to white */
 }
 
 .hero-section {
@@ -66,7 +83,7 @@ h5 {
 .welcome-text {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #333;
+  color: white; /* Set the font color to white */
 }
 
 .hero-text {
@@ -76,16 +93,19 @@ h5 {
 .hero-text h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  color: white; /* Set the font color to white */
 }
 
 .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+  color: white; /* Set the font color to white */
 }
 
 .hero-text p {
   font-size: 1.5rem;
   margin-bottom: 20px;
+  color: white; /* Set the font color to white */
 }
 
 .hero-text button {
@@ -139,6 +159,24 @@ h5 {
   }
 
   h5 {
-    font-size: 2rem;
+    font-size: 1.5rem; /* Adjust the font size for smaller screens */
+    color: white; /* Set the font color to white */
+  }
+
+  p {
+    font-size: 1rem; /* Adjust the font size for smaller screens */
+    color: white; /* Set the font color to white */
+  }
+}
+
+@media (max-width: 480px) {
+  h5 {
+    font-size: 1.2rem; /* Adjust the font size for smaller screens */
+    color: white; /* Set the font color to white */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust the font size for smaller screens */
+    color: white; /* Set the font color to white */
   }
 }

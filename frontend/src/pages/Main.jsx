@@ -5,6 +5,7 @@ import './Main.css'; // Import the CSS file
 import { ProductCard } from '../components/ProductCard'; // Import the ProductCard component
 import chickenstew from '../assets/chickenstew.png'; // Import the image
 import fishnchips from '../assets/fishnchips.png'; // Import the image
+import { Footer } from '../components/Footer'; // Import the Footer component
 
 export const Main = () => {
   const navigate = useNavigate(); // Initialize the useNavigate hook
@@ -50,6 +51,7 @@ export const Main = () => {
           <ProductCard key={meal.id} product={meal} />
         ))}
       </div>
+      <Footer /> {/* Add the Footer component here */}
     </div>
   );
 };

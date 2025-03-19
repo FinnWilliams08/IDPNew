@@ -1,3 +1,4 @@
+/* General styles */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -9,7 +10,7 @@
 .welcome-text {
   font-size: 2.5rem; /* Set an appropriate font size */
   margin-bottom: 20px;
-  color: white; /* Ensure the text color is white */
+  color: white !important; /* Ensure the text color is white */
 }
 
 .hero-section {
@@ -22,7 +23,7 @@
   color: white;
   text-align: center;
   width: 100%; /* Ensure it takes up the full width */
-  padding: 20px;
+  padding: 50px 20px;
 }
 
 .hero-text {
@@ -30,12 +31,12 @@
 }
 
 .hero-text h1 {
-  font-size: 3rem;
+  font-size: 2.5em;
   margin-bottom: 20px;
 }
 
 .hero-text p {
-  font-size: 1.5rem;
+  font-size: 1.2em;
   margin-bottom: 20px;
 }
 
@@ -57,6 +58,7 @@
   margin-top: 40px;
   margin-bottom: 20px;
   color: white;
+  text-align: center;
 }
 
 .featured-meals {
@@ -64,6 +66,7 @@
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap; /* Ensure the product cards wrap on smaller screens */
+  margin-bottom: 50px; /* Adjust the value as needed */
 }
 
 /* Media Queries for Responsiveness */
@@ -78,11 +81,11 @@
   }
 
   .hero-text h1 {
-    font-size: 2rem;
+    font-size: 2em;
   }
 
   .hero-text p {
-    font-size: 1.2rem;
+    font-size: 1em;
   }
 
   .hero-text button {
@@ -93,5 +96,19 @@
   .featured-meals {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.5em;
+  }
+
+  .hero-text p {
+    font-size: 0.9em;
+  }
+
+  .container {
+    padding: 10px;
   }
 }
