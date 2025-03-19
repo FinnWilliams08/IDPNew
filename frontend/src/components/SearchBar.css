@@ -1,0 +1,20 @@
+.search-bar-container {
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+  margin-bottom: 16px;
+}
+
+.search-bar {
+  width: 200px; /* Make the search bar smaller */
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .search-bar {
+    width: 100%; /* Make the search bar take full width on smaller screens */
+  }
+}

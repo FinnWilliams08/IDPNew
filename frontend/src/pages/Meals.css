@@ -1,0 +1,144 @@
+.meals-container {
+  padding: 30px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+}
+
+.product-cards-container {
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Add gap between product cards */
+}
+
+h5 {
+  color: #ff7e5f;
+  font-size: 40px;
+}
+
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  width: 100%; /* Ensure it takes up the full width */
+  padding: 20px;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-section button {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-section button:hover {
+  background-color: darkgreen;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center; /* Center align the text */
+}
+
+.welcome-text {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero-text {
+  margin-bottom: 40px; /* Add margin to the bottom */
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text button {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: darkgreen;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .welcome-text {
+    font-size: 2rem;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+
+  .hero-text button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .meals-container {
+    padding: 20px;
+  }
+
+  .product-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
+}
