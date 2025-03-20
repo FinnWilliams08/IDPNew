@@ -10,6 +10,7 @@ import './ProductCard.css'; // Import the CSS file
 export const ProductCard = ({ product }) => {
   const [cartItems, setCartItems] = useContext(CartContext);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false); // State for success message
   const { id, title, alt, imageSource, price, availability, description } = product;
 
   const handleImageClick = () => {
@@ -18,6 +19,14 @@ export const ProductCard = ({ product }) => {
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
+  };
+
+  const handleAddToCart = () => {
+    setCartItems((prev) => updateItemInCart("add", product, prev));
+    setShowSuccessMessage(true);
+    setTimeout(() => {
+      setShowSuccessMessage(false);
+    }, 3000); // Hide the message after 3 seconds
   };
 
   return (
@@ -40,13 +49,14 @@ export const ProductCard = ({ product }) => {
         </Row>
         <button
           className="add-to-cart-button"
-          onClick={() =>
-            setCartItems((prev) => updateItemInCart("add", product, prev))
-          }
+          onClick={handleAddToCart}
           disabled={!availability}
         >
           Add to Cart 🛒
         </button>
+        {showSuccessMessage && (
+          <p className="success-message">Item added to cart successfully!</p>
+        )}
       </Column>
 
       <ImageModal 

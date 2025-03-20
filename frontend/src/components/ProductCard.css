@@ -91,6 +91,12 @@
   background-color: #0056b3;
 }
 
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .product-card {

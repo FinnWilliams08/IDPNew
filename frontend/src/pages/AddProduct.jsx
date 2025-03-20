@@ -13,6 +13,7 @@ export const AddProduct = () => {
 
   const [title, setTitle] = useState("");
   const [price, setPrice] = useState(0);
+  const [description, setDescription] = useState(""); // New state for description
   const [img, setImg] = useState(null);
 
   const [message, setMessage] = useState("");
@@ -26,6 +27,12 @@ export const AddProduct = () => {
         value={price}
         setValue={setPrice}
         type="number"
+      />
+
+      <InputField
+        label="Product description:" // New input field for description
+        value={description}
+        setValue={setDescription}
       />
 
       <input
@@ -43,6 +50,7 @@ export const AddProduct = () => {
           const formData = new FormData();
           formData.append("title", title);
           formData.append("price", price);
+          formData.append("description", description); // Append description to formData
           formData.append("productImage", img);
 
           try {

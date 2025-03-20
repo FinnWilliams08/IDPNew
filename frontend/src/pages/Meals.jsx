@@ -9,6 +9,7 @@ export const Meals = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [filters, setFilters] = useState({
     diabetic: false,
+    notForDiabetics: false,
     dairyFree: false,
     easyToChew: false,
   });
@@ -23,11 +24,12 @@ export const Meals = () => {
 
   const filteredProducts = sampleProductsList.filter((product) => {
     const matchesSearchQuery = product.title.toLowerCase().includes(searchQuery.toLowerCase());
-    const matchesDiabetic = !filters.diabetic || product.description.toLowerCase().includes('diabetic');
+    const matchesDiabetic = !filters.diabetic || product.description.toLowerCase().includes('suitable for diabetic');
+    const matchesNotForDiabetics = !filters.notForDiabetics || product.description.toLowerCase().includes('not for diabetics');
     const matchesDairyFree = !filters.dairyFree || product.description.toLowerCase().includes('dairy-free');
     const matchesEasyToChew = !filters.easyToChew || product.description.toLowerCase().includes('easy to chew');
 
-    return matchesSearchQuery && matchesDiabetic && matchesDairyFree && matchesEasyToChew;
+    return matchesSearchQuery && matchesDiabetic && matchesNotForDiabetics && matchesDairyFree && matchesEasyToChew;
   });
 
   const starters = filteredProducts.filter((product) => product.category === 'Starters');
@@ -46,6 +48,15 @@ export const Meals = () => {
             onChange={handleFilterChange}
           />
           Diabetic
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="notForDiabetics"
+            checked={filters.notForDiabetics}
+            onChange={handleFilterChange}
+          />
+          NOT for Diabetics
         </label>
         <label>
           <input
