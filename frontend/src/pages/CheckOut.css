@@ -1,0 +1,23 @@
+.delivery-info {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333;
+  padding: 50px; /* Increase padding around the delivery info section */
+  border-radius: 8px; /* Optional: Add border radius for rounded corners */
+}
+
+.delivery-info p {
+  margin: 20px 0; /* Increase the margin between paragraphs */
+}
+
+.reviews {
+  margin-top: 20px; /* Increase the margin-top for better spacing */
+  font-size: 1rem;
+  color: #666;
+  padding: 30px; /* Increase padding around the reviews section */
+  border-radius: 8px; /* Optional: Add border radius for rounded corners */
+}
+
+.reviews p {
+  margin: 1px 0; /* Increase the margin between paragraphs */
+}

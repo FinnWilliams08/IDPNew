@@ -8,6 +8,7 @@ import { ConfirmModal } from "../components/ConfirmModal";
 import { Row } from "../components/Row";
 import { CartContext } from "../context/CartProvider";
 import { getCartTotal, getNumberOfItemsInCart } from "../utils/cartManagement";
+import './CheckOut.css'; // Import the CSS file
 
 export const CheckOut = () => {
   const waitTime = 5 * 1000;
@@ -43,6 +44,17 @@ export const CheckOut = () => {
             />
             <button onClick={() => navigate("/")}>Continue Shopping</button>
           </Row>
+          <div className="delivery-info">
+            <p>Delivery Time: ASAP (30 minutes)</p>
+            <p>Driver Name: Alexander</p>
+            <p>Driver Rating: ⭐⭐⭐⭐⭐ (4.9/5)</p>
+          </div>
+         
+          <div className="reviews">
+            <p>"Alexander was very professional and a lovely gentlemen!" - Mary Johnson</p>
+            <p>"Quick and efficient delivery. Highly recommend!" - John Hughs</p>
+            <p>"Great service, will order again!" - Steve Potter</p>
+          </div>
         </Column>
       )}
     </Column>

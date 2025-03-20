@@ -51,6 +51,12 @@ export const Main = () => {
           <ProductCard key={meal.id} product={meal} />
         ))}
       </div>
+      <div className="opening-times">
+        <h2>Opening Times</h2>
+        <p>Monday - Friday: 8:00 AM - 8:00 PM</p>
+        <p>Saturday: 9:00 AM - 6:00 PM</p>
+        <p>Sunday: Closed</p>
+      </div>
       <Footer /> {/* Add the Footer component here */}
     </div>
   );

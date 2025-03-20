@@ -69,7 +69,21 @@
   margin-bottom: 50px; /* Adjust the value as needed */
 }
 
+.opening-times {
+  margin-top: 40px;
+  text-align: center;
+  color: white; /* Set the font color to white */
+}
 
+.opening-times h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.opening-times p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
 
 @media (max-width: 480px) {
   .hero-text h1 {
