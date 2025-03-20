@@ -122,52 +122,7 @@ p {
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .hero-section {
-    height: auto;
-    padding: 40px 20px;
-  }
-
-  .welcome-text {
-    font-size: 2rem;
-  }
-
-  .hero-text h2 {
-    font-size: 2rem;
-  }
-
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-
-  .hero-text p {
-    font-size: 1.2rem;
-  }
-
-  .hero-text button {
-    font-size: 1rem;
-    padding: 8px 16px;
-  }
-
-  .meals-container {
-    padding: 20px;
-  }
-
-  .product-cards-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  h5 {
-    font-size: 1.5rem; /* Adjust the font size for smaller screens */
-    color: white; /* Set the font color to white */
-  }
-
-  p {
-    font-size: 1rem; /* Adjust the font size for smaller screens */
-    color: white; /* Set the font color to white */
-  }
-}
+/*  */
 
 @media (max-width: 480px) {
   h5 {
