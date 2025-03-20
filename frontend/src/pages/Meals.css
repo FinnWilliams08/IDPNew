@@ -6,6 +6,7 @@
   align-items: flex-start; /* Align items to the left */
 }
 
+
 .filters {
   display: flex;
   gap: 20px;

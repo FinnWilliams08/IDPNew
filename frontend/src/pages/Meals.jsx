@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ProductCard } from '../components/ProductCard';
 import { SearchBar } from '../components/SearchBar';
 import { sampleProductsList } from '../assets/sampleProducts';
+import { Footer } from '../components/Footer'; // Import the Footer component
 import './Meals.css'; // Import the CSS file
 
 export const Meals = () => {
@@ -81,6 +82,7 @@ export const Meals = () => {
           <ProductCard key={product.id} product={product} />
         ))}
       </div>
+
     </div>
   );
 };

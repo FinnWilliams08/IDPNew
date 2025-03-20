@@ -42,7 +42,7 @@ export const sampleProductsList = [
     alt: "Lasagne",
     imageSource: lasagna,
     price: 15.0,
-    description: "A rich and easy-to-chew Italian favourite with layers of pasta, slow-cooked beef ragu, béchamel sauce, and melted cheese. Contains dairy and gluten. Not suitable for diabetics. Approx. 550 kcal per serving.",
+    description: "A rich and easy-to-chew Italian favourite with layers of pasta, slow-cooked beef ragu, béchamel sauce, and melted cheese. Contains dairy and gluten. NOT for diabetics. Approx. 550 kcal per serving.",
     availability: false,
     category: "Mains"
   },
@@ -62,7 +62,7 @@ export const sampleProductsList = [
     alt: "Pie and Mash",
     imageSource: pienmash,
     price: 15.0,
-    description: "A hearty meat pie with creamy mashed potatoes. Contains gluten and dairy. Not suitable for diabetics. Approx. 650 kcal per serving.",
+    description: "A hearty meat pie with creamy mashed potatoes. Contains gluten and dairy. NOT for diabetics. Approx. 650 kcal per serving.",
     availability: true,
     category: "Mains"
   },
@@ -142,7 +142,7 @@ export const sampleProductsList = [
     alt: "Mac and Cheese",
     imageSource: macncheese,
     price: 11.0,
-    description: "Tender macaroni in a creamy cheese sauce. Easy to chew but contains dairy and gluten. Not suitable for diabetics. Approx. 600 kcal per serving.",
+    description: "Tender macaroni in a creamy cheese sauce. Easy to chew but contains dairy and gluten. NOT for diabetics. Approx. 600 kcal per serving.",
     availability: true,
     category: "Mains"
   },
@@ -152,7 +152,7 @@ export const sampleProductsList = [
     alt: "Picky Bits",
     imageSource: picybits,
     price: 9.5,
-    description: "A selection of light bites including sliced cheese, cured meats, fresh bread, and a dip. Contains dairy and gluten. Not suitable for diabetics. Approx. 350 kcal per serving.",
+    description: "A selection of light bites including sliced cheese, cured meats, fresh bread, and a dip. Contains dairy and gluten. NOT for diabetics. Approx. 350 kcal per serving.",
     availability: true,
     category: "Starters"
   },

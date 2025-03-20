@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Footer } from '../components/Footer'; // Import the Footer component
 import './Contact.css'; // Import the CSS file
 
 export default function Contact() {
@@ -66,6 +67,7 @@ export default function Contact() {
           <button type="submit" className="submit-button">Submit</button>
         </form>
       )}
+      <Footer /> {/* Add the Footer component */}
     </main>
   );
 }
