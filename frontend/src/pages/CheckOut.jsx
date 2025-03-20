@@ -35,7 +35,7 @@ export const CheckOut = () => {
         </p>
       ) : (
         <Column>
-          <h2>User Info</h2>
+          <h2>Check Out</h2>
           <CartItemsList />
           <Row style={{ justifyContent: "center" }}>
             <ConfirmModal
