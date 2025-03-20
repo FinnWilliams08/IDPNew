@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <p>&copy; 2025 Your Local Food Service. All rights reserved.</p>
-        <p>Contact us: LocalFoods25@gamil.com | 📞 +44 7700 900123</p>
+        <p>Contact us directly: LocalFoods25@gmail.com | 📞 +44 7700 900123</p>
         <p>Follow us on:
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"> Facebook</a>,
           <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"> Twitter</a>,
