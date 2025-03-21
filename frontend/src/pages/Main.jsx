@@ -20,7 +20,7 @@ export const Main = () => {
          title: "Chicken Stew",
          alt: "Chicken Stew",
          imageSource: chickenstew,
-         price: 13.99,
+         price: 13,
          description: "A tasty and comforting chicken stew made with soft, slow-cooked chicken, fresh vegetables, and a mild, flavorful broth. It’s high in protein to help with muscle strength and has fiber for good digestion. The soft texture makes it easy to chew and swallow, perfect for elderly people. It’s also low in added sugar and suitable for diabetics.",
          availability: true,
     },

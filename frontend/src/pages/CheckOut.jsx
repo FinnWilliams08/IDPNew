@@ -29,10 +29,12 @@ export const CheckOut = () => {
   return (
     <Column>
       {isConfirmed ? (
-        <p>
-          Thank You, your order has been confirmed. You will be redirected to
-          the homepage in {timeRemaining} seconds...
-        </p>
+        <div>
+          <p>Thank You, your order has been confirmed.</p>
+          <p>Your order will be with you shortly.</p>
+          <p>You will be emailed a receipt.</p>
+          <p>You will be redirected to the homepage in {timeRemaining} seconds...</p>
+        </div>
       ) : (
         <Column>
           <h2>Check Out</h2>
@@ -44,6 +46,11 @@ export const CheckOut = () => {
             />
             <button onClick={() => navigate("/")}>Continue Shopping</button>
           </Row>
+          
+          <div className="payment-info">
+            <p style={{ fontWeight: 'bold', fontSize: '1.5em' }}><u>CASH ONLY</u></p>
+          </div>
+
           <div className="delivery-info">
             <p>Delivery Time: ASAP (30 minutes)</p>
             <p>Driver Name: Alexander</p>

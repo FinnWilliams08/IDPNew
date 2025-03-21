@@ -9,6 +9,9 @@
 .delivery-info p {
   margin: 20px 0; /* Increase the margin between paragraphs */
 }
+p {
+    font-size: 40px;
+}
 
 .reviews {
   margin-top: 20px; /* Increase the margin-top for better spacing */
