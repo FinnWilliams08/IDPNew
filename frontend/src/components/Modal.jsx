@@ -9,7 +9,7 @@ export const Modal = ({ children, setVisibility }) => {
           width: "100vw",
           height: "100vh",
           zIndex: 0,
-          top: "50%",
+          top: "20%",
           left: "50%",
           transform: "translate(-50%, -50%)",
           position: "absolute",
